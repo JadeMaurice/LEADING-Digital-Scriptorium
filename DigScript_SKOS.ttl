@@ -62,7 +62,8 @@ ds:material a skos:Concept ;
 
 ds:author a skos:Concept ;
   skos:prefLabel "Author"@en ;
-  skos:inScheme ds:digitalScriptorium .
+  skos:inScheme ds:digitalScriptorium ;
+  skos:related dcterms:creator .  #do I want to add mapping relations into this document or leave the document as-is and map in separate file?
 
 ds:artist a skos:Concept ;
   skos:prefLabel "Artist"@en ;
