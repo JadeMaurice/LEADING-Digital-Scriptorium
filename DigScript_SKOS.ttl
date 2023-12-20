@@ -8,3 +8,74 @@
 ds:digitalScriptorium rdf:type skos:conceptScheme ;
   dcterms:title "Digital Scriptorium"@en .
 
+ds:manuscript rdf:type skos:Concept ;
+  skos:prefLabel "Manuscript"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:holding rdf:type skos:Concept ;
+  skos:prefLabel "Holding"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:ds2Record rdf:type skos:Concept ;
+  skos:prefLabel "DS 2.0 Record"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:standardTitle a skos:Concept ;
+  skos:prefLabel "Standard Title"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:actor a skos:Concept ;
+  skos:prefLabel "Actor (Name Authority"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:personal a skos:Concept ;
+  skos:prefLabel "Personal (Name Authority"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:corporate a skos:Concept ;
+  skos:prefLabel "Corporate (Name Authority"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:role a skos:Concept ;
+  skos:prefLabel "Role (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:term a skos:Concept ;
+  skos:prefLabel "Term (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:language a skos:Concept ;
+  skos:prefLabel "Language (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:century a skos:Concept ;
+  skos:prefLabel "Century (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:place a skos:Concept ;
+  skos:prefLabel "Place (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:material a skos:Concept ;
+  skos:prefLabel "Material (Authority File)"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:author a skos:Concept ;
+  skos:prefLabel "Author"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:artist a skos:Concept ;
+  skos:prefLabel "Artist"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:scribe a skos:Concept ;
+  skos:prefLabel "Scribe"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:formerOwner a skos:Concept ;
+  skos:prefLabel "Former owner"@en ;
+  skos:inScheme ds:digitalScriptorium .
+
+ds:associatedAgent a skos:Concept ;
+  skos:prefLabel "Associated agent"@en ;
+  skos:inScheme ds:digitalScriptorium .
