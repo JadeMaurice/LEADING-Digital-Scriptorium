@@ -1,0 +1,70 @@
+subject_id	subject_label	predicate_id	object_id	object label	author_id	mapping_date	comment
+DS:Q1	Manuscript	skos:relatedMatch	edm:ProvidedCHO	Provided Cultural Heritage Object	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q2	Holding	skos:relatedMatch	edm:EuropeanaAggregation	Europeana Aggregation	orcid:0009-0005-3442-9096	1/7/2024	Definition in EDM documentation: "The set of resources related to a single cultural heritage object that collectively represents that object in Europeana. Such set consists of: all descriptions about the object that Europeana collects from (possibly different) content providers, including thumbnails and other forms of abstractions, as well as of the description of the object Europeana builds"|DS does not host images
+DS:Q3	DS 2.0 Record	skos:relatedMatch	edm:EuropeanaObject	Europeana Object	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q4	Current				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q5	Non-Current				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q6	Standard Title	skos:closeMatch	dc:title	Title	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q7	Actor (Name Authority)	skos:closeMatch	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	Equivalent class: E39_Actor (CIDOC CRM)
+DS:Q8	Personal (Name Authority)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q9	Corporate (Name Authority)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q10	Role (Authority File)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q11	Term (Authority File)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q12	Language (Authority File)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q13	Century (Authority File)	skos:broadMatch	edm:TimeSpan	Time Span	orcid:0009-0005-3442-9096	1/7/2024	Equivalent class: E52_Time-Span (CIDOC-CRM)|"Time span" is a broader term for a specific type of span ("century"); time span is an "abstract temporal extent"
+DS:Q14	Dated				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q15	Non-dated				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q16	Place (Authority File)	skos:closeMatch	edm:place	Place	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q17	Material (Authority File)				orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q18	Author	rdfs:subClassOf	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q19	Artist	rdfs:subClassOf	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q20	Scribe	rdfs:subClassOf	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q21	Former owner	rdfs:subClassOf	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	
+DS:Q1284	Associated agent	skos:closeMatch	edm:agent	Agent	orcid:0009-0005-3442-9096	1/7/2024	Equivalent class: E39_Actor (CIDOC CRM)
+DS:P1	DS ID	skos:relatedMatch	edm:datasetName	Dataset Name	orcid:0009-0005-3442-9096	1/11/2024	This property holds the identifier given to the dataset in Europeana.
+DS:P2	manuscript holding	skos:broadMatch	edm:source|dc:source	Source	orcid:0009-0005-3442-9096	1/11/2024	DC namespace import; definition: "A related resource from which the described resource is derived in whole or in part."
+DS:P3	described manuscript	skos:broadMatch	edm:aggregatedCHO	Aggregated Cultural Heritage Object	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P4	holding institution in authority file	skos:relatedMatch	edm:dataProvider|edm:provider	Data Provider	orcid:0009-0005-3442-9096	1/11/2024	The name or identifier of the organization who contributes data indirectly to an aggregation service
+DS:P5	holding institution as recorded	skos:relatedMatch	edm:dataProvider	Data Provider	orcid:0009-0005-3442-9096	1/11/2024	The name or identifier of the organization who contributes data indirectly to an aggregation service
+DS:P6	holding status				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P7	Institutional ID	skos:relatedMatch	edm:dataProvider	Data Provider	orcid:0009-0005-3442-9096	1/11/2024	The name or identifier of the organization who contributes data indirectly to an aggregation service
+DS:P8	shelfmark	skos:broadMatch	dc:identifier	Identifier	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P9	link to institutional record	skos:relatedMatch	edm:hasView		orcid:0009-0005-3442-9096	1/11/2024	links to web representation|in EDM edm:hasView has range edm:WebResource
+DS:P10	title as recorded	skos:closeMatch	dc:title	Title	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P11	standard title	skos:relatedMatch	dcterms:alternative	Alternative	orcid:0009-0005-3442-9096	1/11/2024	In DS "standard title" allows for greater recall by assigning an alternative label to search by, e.g., "Book of Hours"; dcterms:alternative operates similarly
+DS:P12	uniform title as recorded				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P13	in original script				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P14	associated name as recorded				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P15	role in authority file				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P16	instance of				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P17	name in authority file	skos:narrowMatch	dc:creator	Creator	orcid:0009-0005-3442-9096	1/11/2024	EDM uses dc:creator as a property
+DS:P18	genre as recorded	skos:relatedMatch|skos:closeMatch	edm:isRelatedTo|dc:type	Is Related To|Type	orcid:0009-0005-3442-9096	1/11/2024	"most general contextual property in EDM. Contextual properties have typically to do either with the things that have happened to or together with the object under consideration, or what the object refers to by its shape, form or features in a figural or encoded form." Very broad coverage of "aboutness," including "scholarly classifications," i.e., genre and subject terms
+DS:P19	subject as recorded	skos:closeMatch	dc:subject	Subject	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P20	term in authority file	skos:relatedMatch	edm:hasType|edm:isRelatedTo	Has Type	orcid:0009-0005-3442-9096	1/11/2024	"hasType" property in EDM does not cover "aboutness" so cannot be applied to subject or genre terms, presumably (different coverage)
+DS:P21	language as recorded	skos:relatedMatch	edm:language	Europeana Language	orcid:0009-0005-3442-9096	1/11/2024	language string vs. an authority identifier
+DS:P22	language in authority file	skos:narrowMatch	edm:language	Europeana Language	orcid:0009-0005-3442-9096	1/11/2024	takes an ISO-639 language tag, whereas a DS authority file for a language would link to a Wikidata page that linked to an ISO-639 authority file; hence my use of the "narrow match" predicate
+DS:P23	production date as recorded	skos:relatedMatch	edm:occurredAt|edm:year	Occurred At|Year	orcid:0009-0005-3442-9096	1/11/2024	in EDM "occurred at" is associated with a creation/production event and takes a time span value
+DS:P24	production century in authority file	skos:relatedMatch	edm:occurredAt|edm:year|dc:created	Occurred At|Year|Created	orcid:0009-0005-3442-9096	1/11/2024	in EDM "occurred at" is associated with a creation/production event and takes a time span value
+DS:P25	century	skos:relatedMatch	edm:occurredAt	Occurred At	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P26	dated				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P27	production place as recorded	skos:relatedMatch	edm:happenedAt	Happened At	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P28	place in authority file	skos:relatedMatch	edm:happenedAt|dc:coverage	Happened At|Coverage	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P29	physical description	skos:relatedMatch	dc:description	Description	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P30	material as recorded	skos:relatedMatch	edm:medium|dcterms:medium	Medium	orcid:0009-0005-3442-9096	1/11/2024	An instance where EDM has borrowed another ontology property; there is no edm:medium property, strictly speaking, it simply uses the dcterms:medium property (importing the DC terms namespace)
+DS:P31	material in authority file	skos:relatedMatch	edm:medium|dcterms:medium	Medium	orcid:0009-0005-3442-9096	1/11/2024	An instance where EDM has borrowed another ontology property; there is no edm:medium property, strictly speaking, it simply uses the dcterms:medium property (importing the DC terms namespace)
+DS:P32	note	skos:narrowMatch	dcterms:extent|dc:format	Extent|Format	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P33	acknowledgements				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P34	date added	skos:closeMatch	dc:date		orcid:0009-0005-3442-9096	1/11/2024	
+DS:P35	date last updated	skos:closeMatch	dc:date		orcid:0009-0005-3442-9096	1/11/2024	
+DS:P36	latest date	skos:relatedMatch	edm:occurredAt|dc:date	Occurred At	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P37	earliest date	skos:relatedMatch	edm:occurredAt|dc:date	Occurred At	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P38	start time	skos:relatedMatch	edm:begin		orcid:0009-0005-3442-9096	1/11/2024	Per the EDM definition this property is used differently than ds:startTime; "edm:begin" relates to a time span or agent, not the CHO itself
+DS:P39	end time	skos:relatedMatch	edm:end		orcid:0009-0005-3442-9096	1/11/2024	See note for edm:begin
+DS:P40	external identifier				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P41	IIIF manifest	skos:relatedMatch	edm:isRepresentationOf	Is Representation Of	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P42	Wikidata QID	skos:broadMatch	dc:identifier	Identifier	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P43	VIAF ID	skos:broadMatch	dc:identifier	Identifier	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P44	External URI	skos:broadMatch	dc:identifier	Identifier	orcid:0009-0005-3442-9096	1/11/2024	
+DS:P45	equivalent property				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P46	formatter URL				orcid:0009-0005-3442-9096	1/11/2024	
+DS:P47	subclass of				orcid:0009-0005-3442-9096	1/11/2024	
