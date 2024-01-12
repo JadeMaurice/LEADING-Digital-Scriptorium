@@ -12,7 +12,6 @@
 # mapping_set_version: DS_EDM_202401.sssom.csv
 # object_source: http://www.europeana.eu/schemas/edm/
 # subject_source: https://digital-scriptorium.org/
-
 subject_id,subject_label,predicate_id,object_id,object label,author_id,mapping_date,comment
 DS:Q1,Manuscript,skos:relatedMatch,edm:ProvidedCHO,Provided Cultural Heritage Object,orcid:0009-0005-3442-9096,1/7/2024,
 DS:Q2,Holding,skos:relatedMatch,edm:EuropeanaAggregation,Europeana Aggregation,orcid:0009-0005-3442-9096,1/7/2024,"Definition in EDM documentation: ""The set of resources related to a single cultural heritage object that collectively represents that object in Europeana. Such set consists of: all descriptions about the object that Europeana collects from (possibly different) content providers, including thumbnails and other forms of abstractions, as well as of the description of the object Europeana builds""|DS does not host images"
