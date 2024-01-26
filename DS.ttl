@@ -1,9 +1,25 @@
-@prefix ds: <https://catalog.digital-scriptorium.org/> . #check URI recs
+@prefix : <https://catalog.digital-scriptorium.org/> . #need better URI to point to
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#>
 
+<https://catalog.digital-scriptorium.org/> a owl:Ontology , voaf:Vocabulary ;
+	vann:preferredNamespacePrefix "ds" ;
+	vann:preferredNamespaceUri "<https://catalog.digital-scriptorium.org/>" ;
+	dc:title "Digital Scriptorium (DS) vocabulary"@en ;
+	dc:description "The Digital Scriptorium (DS) collects, enriches, and maintains, in the form of a linked open data union catalog, the descriptions provided by Digital Scriptorium data providers. The RDF vocabulary for <DS link> defines the elements introduced by DS (as opposed to the ones DS re-uses from other namespaces)."@en ;
+	dcterms:issued "2024-01-25"^^xsd:date ;
+	dc:modified "2024-01-25"^^xsd:date ;
+	owl:versionInfo "2.0.1" ;
+	radion:versionNotes "The present specification is based on the document \"\", edited by Jade Snelling, but based on pre-existing work. This specification attempts to define and align DS elements with other ontologies."@en ;
+	dc:creator "Jade Snelling" .
 
 ds:digitalScriptorium rdf:type skos:conceptScheme ;
   dcterms:title "Digital Scriptorium"@en .
@@ -28,11 +44,12 @@ ds:actor a skos:Concept ;
   skos:prefLabel "Actor (Name Authority"@en ;
   skos:inScheme ds:digitalScriptorium .
 
-ds:personal a skos:Concept ;
+ds:personalName a skos:Concept ;
   skos:prefLabel "Personal (Name Authority"@en ;
-  skos:inScheme ds:digitalScriptorium .
+  skos:inScheme ds:digitalScriptorium ;
+  owl:complementOf :corporateName .
 
-ds:corporate a skos:Concept ;
+ds:corporateName a skos:Concept ;
   skos:prefLabel "Corporate (Name Authority"@en ;
   skos:inScheme ds:digitalScriptorium .
 
