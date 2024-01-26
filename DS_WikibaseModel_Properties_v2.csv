@@ -1,0 +1,48 @@
+PID,Label,Property type,Data type,Previous description,Suggested description,Usage/constraints [per data model],Domain,Range,Example,Notes
+P1,DS ID,direct property,String,Digital Scriptorium 2.0 identifier,Digital Scriptorium 2.0 identifier assigned by Digital Scriptorium at ingest,"string value, identifier assigned on ingest; attached directly to Manuscript entity [Q1]",Manuscript (Q1),string (value),"""DSNAME104"", ""DS324""",Identifier assigned to either a named actor (can be personal or corporate name) or a maunscript
+P2,manuscript holding,direct property,Item,Holding of a manuscript,,,Manuscript (Q1),Holding (Q2),,object property
+P3,described manuscript,direct property,Item,The described physical manuscript,"Record (description, metadata) for a physical manuscript as maintained by its holding institution",,DS 2.0 Record (Q3),Manuscript (Q1),,object property
+P4,holding institution in authority file,qualifier,Item,None,Name of the holding institution in the source metadata record that has been reconciled with a name authority,takes corporate name authority as value [Q9]; qualifies [P5],P5 statement (string value) node?,Corporate (Name Authority) (Q9),,object property
+P5,holding institution as recorded,direct property,String,Name of the holding institution in the source metadata record,,"string value; maintains separation between information as recorded and reconciled term, which is attached to it as a qualifier, see P4",Holding (Q2),string (value),,data property
+P6,holding status,direct property,Item,The status of the holding (current or non-current),,,Holding (Q2),item (current (Q4); non-current (Q5)),,object property
+P7,Institutional ID,direct property,External identifier,Institutional identifier for the manuscript,Local identifier for manuscript object assigned by its holding institution,,Holding (Q2),external identifier,,data property
+P8,shelfmark,direct property,String,The institutional call number assigned to a manuscript,Call number for manuscript object assigned by its holding institution,,Holding (Q2),string (value),,data property
+P9,link to institutional record,direct property,URL,Link to catalog record or digital facsimile,URL that points to a manuscript's digital catalog record or facsimile,,Holding (Q2),URL,,data property
+P10,title as recorded,direct property,String,Title as given in the source metadata record,,,DS 2.0 Record (Q3),string (value),,data property
+P11,standard title,qualifier,Item,the assigned standard title,An assigned standard title that operates as a shortened authoritative alias,"Qualifies ""title as recorded;"" is based on knowledge of how users search for texts/increases searchability",P10 statement node,Standard Title (Q6),,object property
+P12,uniform title as recorded,direct property,String,Uniform title as recorded in the source metadata record,,,DS 2.0 Record (Q3),string (value),,data property
+P13,in original script,qualifier,String,Name/title in original script,,,P14 statement node,string (value),,data property
+P14,associated name as recorded,direct property,String,"Associated actor, such as author, artist, or scribe","The name of some associated actor, such as author, artist, or scribe",,DS 2.0 Record (Q3),string (value),,data property
+P15,role in authority file,qualifier,Item,Actor role,"A defined way in which an actor relates to a manuscript, e.g., as former owner or author",values come from a controlled list,P14 statement node,Role (Q10),,object property
+P16,instance of,-,Item,That class of which this subject is a particular example and member,,"property not specific to data model; promotes reconciliation, inferencing, re-use",-,-,,-
+P17,name in authority file,qualifier,Item,None,Name from source metadata that has been reconciled with a name authority,,P14 statement node,Name Authority entity (Q7-Q9),,object property
+P18,genre as recorded,direct property,String,Description of what the manuscript is (esp. useful for liturgical books),,,DS 2.0 Record (Q3),string (value),,data property
+P19,subject as recorded,direct property,String,What the works/texts in the manuscript are about,,,DS 2.0 Record (Q3),string (value),,data property
+P20,term in authority file,qualifier,Item,None,Subject or genre term from source metadata that has been reconciled with an authority record,qualifies both P18 and P19,P18 or P19 statement node,Term (Authority File) (Q11),,object property
+P21,language as recorded,direct property,String,Language in which the text of the manuscript is written,,,DS 2.0 Record (Q3),string (value),,data property
+P22,language in authority file,qualifier,Item,None,Language term from source metadata that has been reconciled with an authority record,,P21 statement node,Language (Authority File) (Q12),,object property
+P23,production date as recorded,direct property,String,Date when the manuscript was produced,"Date/century when the manuscript was produced, according to source (holding institution's) metadata (production century assertion)",,DS 2.0 Record (Q3),string (value),,data property
+P24,production century in authority file,qualifier,Item,None,"Production century assertion that has been linked to an authority value that takes the form of an ordinal numbered century, e.g., ""fifteenth century""",,P23 statement node,Century (Authority File) (Q13),,object property
+P25,century,qualifier,Point in time,None,"Production century assertion that has been linked to a Wikibase point-in-time value that shows up as a string, e.g., ""15. century""",,P23 statement node,time,,data property
+P26,dated,direct property,Item,Is the manuscript dated or datable,Describes whether the manuscript dated or datable,"takes values of ""Dated"" or ""Non-dated"" [Q14|Q15]",DS 2.0 Record (Q3),item (dated (Q14); non-dated (Q15)),,object property
+P27,production place as recorded,direct property,String,Location where the manuscript was produced,"Production place/location of the manuscript, according to the source (holding institution's) metadata",,DS 2.0 Record (Q3),string (value),,data property
+P28,place in authority file,qualifier,Item,None,Place (location) term that has been reconciled (matched) with an authority record,,P27 statement node,Place (Authority File) (Q16),,object property
+P29,physical description,direct property,String,Description of binding; dimensions of manuscript; number of folios; decoration information,,,DS 2.0 Record (Q3),string (value),,data property
+P30,material as recorded,direct property,String,Manuscript material as given on the source metadata record,,,DS 2.0 Record (Q3),string (value),,data property
+P31,material in authority file,qualifier,Item,"Physical medium of manuscript (parchment, paper, etc.)",,,P30 statement node,Material (Authority File) (Q17),,object property
+P32,note,direct property,String,Miscellaneous note,Text field for additional unstructured metadata about a manuscript,,"Holding (Q2), DS 2.0 Record (Q3)",string (value),,data property
+P33,acknowledgements,direct property,String,Acknowledgements for 3rd party catalogers,,,DS 2.0 Record (Q3),string (value),,data property
+P34,date added,direct property,Point in time,Timestamp of DS record creation,,,DS 2.0 Record (Q3),time,,data property
+P35,date last updated,direct property,Point in time,Timestamp of last DS record update,,,DS 2.0 Record (Q3),time,,data property
+P36,latest date,qualifier,Point in time,None,Latest estimated date by which a manuscript was produced,,P23 statement node,time,,data property
+P37,earliest date,qualifier,Point in time,None,Earliest estimated date by which a manuscript was produced,,P23 statement node,time,,data property
+P38,start time,qualifier,Point in time,time an item begins to exist or a statement starts being valid,,,P2 statement node,time,,data property
+P39,end time,qualifier,Point in time,time an item ceases to exist or a statement stops being valid,,,P2 statement node,time,,data property
+P40,external identifier,-,External identifier,A local identifier for the entity in an external system,,"property not specific to data model; promotes reconciliation, inferencing, re-use",-,-,,
+P41,IIIF manifest,direct property,URL,JSON-LD formatted document URL reference described by the IIIF Presentation API,,,DS 2.0 Record (Q3),URL,,
+P42,Wikidata QID,-,External identifier,Wikidata item identifier,,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,,
+P43,VIAF ID,-,External identifier,identifier for the Virtual International Authority File database [format: up to 22 digits],,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,aliases,
+P44,External URI,-,URL,External URI describing the same entity,,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,,
+P45,equivalent property,metaproperty,URL,"equivalent property in other ontologies (use in statements on properties, use property URI)",,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,,
+P46,formatter URL,-,String,"web page URL; URI template from which ""$1"" can be automatically replaced with the effective property value on items.",,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,,
+P47,subclass of,-,Item,this item is a subclass (subset) of that item; all instances of these items are instances of those items,,"property not specific to data model; promotes reconciliation, inferencing, re-use",,,rdfs:subClassOf,
